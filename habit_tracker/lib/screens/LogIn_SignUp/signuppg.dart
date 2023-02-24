@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:habit_tracker/screens/homepage.dart';
 import 'package:habit_tracker/widgets/button.dart';
 import 'package:habit_tracker/widgets/textutils.dart';
 
-class LoginPage extends StatelessWidget {
-  LoginPage({Key? key}) : super(key: key);
+class SignUpPage extends StatelessWidget {
+  SignUpPage({Key? key}) : super(key: key);
   final TextEditingController emailcontroller = TextEditingController();
   final TextEditingController pwdcontroller = TextEditingController();
 
@@ -21,13 +23,20 @@ class LoginPage extends StatelessWidget {
                 const SizedBox(height: 120),
                 Container(
                   child: const Text(
-                    'LOGIN',
+                    'SIGN UP',
                     style: TextStyle(
                       color: Colors.indigo,
                       fontSize: 22,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
+                ),
+                const SizedBox(height: 40),
+                TextUtils(
+                  controller: emailcontroller,
+                  text: 'Name',
+                  obscure: false,
+                  textInputType: TextInputType.name,
                 ),
                 const SizedBox(height: 40),
                 TextUtils(
@@ -44,7 +53,19 @@ class LoginPage extends StatelessWidget {
                   obscure: true,
                 ),
                 const SizedBox(height: 40),
-                InkWell(child: Button(text: 'Sign In')),
+                TextUtils(
+                  controller: pwdcontroller,
+                  text: 'Confirm Password',
+                  textInputType: TextInputType.text,
+                  obscure: true,
+                ),
+                const SizedBox(height: 40),
+                InkWell(
+                  child: Button(text: 'Sign Up'),
+                  onTap: () {
+                    Get.to(() => MyHomePage());
+                  },
+                ),
               ],
             ),
           ),

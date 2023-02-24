@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:habit_tracker/screens/homepage.dart';
 import 'package:habit_tracker/widgets/button.dart';
 import 'package:habit_tracker/widgets/textutils.dart';
 
-class SignUpPage extends StatelessWidget {
-  SignUpPage({Key? key}) : super(key: key);
+class LoginPage extends StatelessWidget {
+  LoginPage({Key? key}) : super(key: key);
   final TextEditingController emailcontroller = TextEditingController();
   final TextEditingController pwdcontroller = TextEditingController();
 
@@ -21,7 +23,7 @@ class SignUpPage extends StatelessWidget {
                 const SizedBox(height: 120),
                 Container(
                   child: const Text(
-                    'SIGN UP',
+                    'LOGIN',
                     style: TextStyle(
                       color: Colors.indigo,
                       fontSize: 22,
@@ -44,14 +46,12 @@ class SignUpPage extends StatelessWidget {
                   obscure: true,
                 ),
                 const SizedBox(height: 40),
-                TextUtils(
-                  controller: pwdcontroller,
-                  text: 'Confirm Password',
-                  textInputType: TextInputType.text,
-                  obscure: true,
+                InkWell(
+                  child: Button(text: 'Sign In'),
+                  onTap: () {
+                    Get.to(() => MyHomePage());
+                  },
                 ),
-                const SizedBox(height: 40),
-                InkWell(child: Button(text: 'Sign Up')),
               ],
             ),
           ),

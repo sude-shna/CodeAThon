@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:habit_tracker/screens/get_started.dart';
+import 'package:habit_tracker/screens/LogIn_SignUp/get_started.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

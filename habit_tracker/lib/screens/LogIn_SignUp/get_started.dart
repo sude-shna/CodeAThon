@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:habit_tracker/screens/loginpg.dart';
-import 'package:habit_tracker/screens/signuppg.dart';
+import 'package:habit_tracker/screens/LogIn_SignUp/loginpg.dart';
+import 'package:habit_tracker/screens/LogIn_SignUp/signuppg.dart';
 import 'package:habit_tracker/widgets/button.dart';
 
 class GetStarted extends StatelessWidget {
@@ -32,7 +32,7 @@ class GetStarted extends StatelessWidget {
               InkWell(
                 child: const Button(text: 'Sign In'),
                 onTap: () {
-                  Get.to(LoginPage());
+                  Get.to(() => LoginPage());
                 },
               ),
               const SizedBox(height: 40),
@@ -49,7 +49,7 @@ class GetStarted extends StatelessWidget {
               InkWell(
                 child: const Button(text: 'Sign Up'),
                 onTap: () {
-                  Get.to(SignUpPage());
+                  Get.to(() => SignUpPage());
                 },
               ),
             ],

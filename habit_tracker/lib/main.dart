@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:habit_tracker/screens/splashscreen.dart';
-import 'package:habit_tracker/screens/loginpg.dart';
 
 void main() {
   runApp(const MyApp());
