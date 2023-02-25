@@ -13,18 +13,11 @@ class SplashScreen extends StatelessWidget {
       Get.to(GetStarted());
     });
 
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Center(
-          child: Text(
-            "Habify",
-            style: TextStyle(
-              color: Colors.amber,
-              fontSize: 48,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
+          child: Image.asset("assets/logo.png"),
         ),
       ),
     );

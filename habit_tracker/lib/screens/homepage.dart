@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:habit_tracker/screens/LogIn_SignUp/signuppg.dart';
+import 'package:habit_tracker/screens/habit_adder.dart';
 import 'package:habit_tracker/widgets/ui.dart';
 import 'package:habit_tracker/widgets/button.dart';
 
@@ -54,7 +55,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               shape: StadiumBorder(),
                               backgroundColor: Colors.white,
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.to(() => Dashboard());
+                            },
                           ),
                         ],
                       ),
@@ -69,35 +72,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
-// child: Container(
-//           width: double.infinity,
-//           padding: const EdgeInsets.all(16.0),
-//           child: Column(
-//             crossAxisAlignment: CrossAxisAlignment.center,
-//             children: [
-//               const SizedBox(height: 40),
-//               Container(
-//                 child: const Text(
-//                   'Welcome To Habify!',
-//                   style: TextStyle(
-//                     color: Colors.indigo,
-//                     fontSize: 28,
-//                     fontWeight: FontWeight.bold,
-//                   ),
-//                 ),
-//               ),
-//               const SizedBox(height: 120),
-//               Container(
-//                 child: const Text(
-//                   'Welcome To Habify!',
-//                   style: TextStyle(
-//                     color: Colors.indigo,
-//                     fontSize: 28,
-//                     fontWeight: FontWeight.bold,
-//                   ),
-//                 ),
-//               ),
-//             ],
-//           ),
-//         ),
