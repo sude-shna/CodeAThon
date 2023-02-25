@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(Dashboard());
-}
-
 // Dashboard
 class Dashboard extends StatefulWidget {
   const Dashboard({super.key});
@@ -100,9 +96,6 @@ class DashboardState extends State<Dashboard> {
                               )
                             ],
                           ),
-
-                          // Timepicker
-                          Text("08:00 AM")
                         ],
                       ),
                     ),

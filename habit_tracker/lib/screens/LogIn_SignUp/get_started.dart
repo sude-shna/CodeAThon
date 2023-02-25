@@ -41,11 +41,11 @@ class GetStarted extends StatelessWidget {
                   "Don't have an Account?",
                   style: TextStyle(
                     color: Colors.black,
-                    fontSize: 18,
+                    fontSize: 14,
                   ),
                 ),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 12),
               InkWell(
                 child: const Button(text: 'Sign Up'),
                 onTap: () {
