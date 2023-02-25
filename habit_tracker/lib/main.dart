@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:habit_tracker/screens/habit_adder.dart';
 import 'package:habit_tracker/screens/splashscreen.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Habit Tracker',
-      home: const SplashScreen(),
+      home: const Dashboard(),
     );
   }
 }
