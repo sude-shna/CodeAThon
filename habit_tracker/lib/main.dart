@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:habit_tracker/screens/habit_adder.dart';
+
+import 'package:get/get.dart';
+
 import 'package:habit_tracker/screens/splashscreen.dart';
 
 void main() {
@@ -9,12 +13,12 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const GetMaterialApp(
       title: 'Habit Tracker',
-      home: const Dashboard(),
+      home: SplashScreen(),
+
     );
   }
 }
